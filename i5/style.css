@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html{
+  width:100%;
+  overflow-x:hidden;
+  padding: 0;
+  background-color: #1b3142;
+}
+
+
+.header {
+  box-sizing: border-box;
+  width: 1650px;
+  height: 400px;
+  background-image: url("https://i.imgur.com/xrJs6jP.jpg");
+  background-position: center;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(255, 219, 77);
+  letter-spacing: 20px;
+  padding: 30px;
+  font-size: 80px;
+  text-align: center;
+}
+
+
+.footer {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
+  font-size: 8px;
+  color: grey;
+  text-align: center;
+  margin-top: 1200px;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.nav {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+label .menu {
+ display: flex;
+ position: absolute;
+ right: -100px;
+ top: -100px;
+ z-index: 100;
+ width: 200px;
+ height: 200px;
+ background: #FFF;
+ border-radius: 50% 50% 50% 50%;
+ transition: 0.5s ease-in-out;
+ box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+ cursor: pointer;
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+label .hamburger:before {
+  top: -10px;
+}
+
+label .hamburger:after {
+  bottom: -10px;
+}
+
+label input {
+  display: none;
+}
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+
+label input:checked + .menu .hamburger {
+  transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  }
+
+a:hover {
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 219, 77);
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+
+.mainContainer {
+  font-size: 24pt;
+  padding: 25px;
+  margin-bottom: -1000px;
+}
+
+
+.intro {
+  width:  963px;
+  height: 1070px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 3px solid rgb(255, 219, 77);
+  padding: 50px;
+  margin-left: -25px;
+  margin-top: -14px;
+
+  font-family: 'Jomolhari', serif;
+  text-align: left;
+  font-weight: normal;
+  font-size: 19px;
+  text-color: white;
+  word-spacing: normal;
+  line-height: 36px;
+
+
+}
+
+.side {
+  width: 675px;
+  height: 600px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 3px solid rgb(255, 219, 77);
+  padding: 30px;
+  margin: -1070px 950px;
+
+  font-family: 'Bebas Neue', cursive;
+  text-align: left;
+  font-weight: normal;
+  font-size: 45px;
+  color: black;
+  word-spacing: normal;
+
+
+}
+
+.side1 {
+  width: 675px;
+  height: 455px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 3px solid rgb(255, 219, 77);
+  padding: 30px;
+  margin: 1085px 950px;
+  margin-bottom: -100px;
+
+  background-image: url("https://s.yimg.com/uu/api/res/1.2/k2_6_KxmBVHw_ZQF72MNUQ--~B/aD03MjA7dz0xMjgwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-images/GLB/2017-10-18/00134c20-b41f-11e7-a8eb-bd769782bee4_JackieBruce.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.sp {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 200px;
+  font-size: 70px;
+  color: rgb(255, 219, 77);
+  background-color: inherit;
+  word-spacing: normal;
+  letter-spacing: 10px;
+  text-shadow: black 1px 0 10px;
+
+}
+
+
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}

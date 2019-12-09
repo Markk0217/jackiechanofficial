@@ -5,38 +5,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jackie Chan's Official Website</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="i1/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div id="navbar">
+    <label>
+      <input type="checkbox">
+      <span class="menu">
+        <span class="hamburger"></span>
+      </span>
+      <ul>
+        <li><a href="index.html" class="nav">Home</a></li>
+        <li><a href="index2.html" class="nav">About</a></li>
+      </ul>
+    </label>
+  </div>
 
   <video loop muted autoplay poster="URL/TO/poster.jpg" class="background-video">
-    <source src="1.mp4" type="video/mp4">
+    <source src="i1/1.mp4" type="video/mp4">
   </video>
 
   <div class="background-video-content">
     Jackie Chan
   </div>
 
-  <label>
-    <input type="checkbox">
-    <span class="menu">
-      <span class="hamburger"></span>
-    </span>
-    <ul>
-      <li><a><a href="index.html">Home</a></li>
-      <li><a><a href="index2.html">About</a></li>
-      <li><a><a href="index2.html">Message</a></li>
-    </ul>
-  </label>
-
   <div class="intro">
-    <div class="photo"><img src="1.jpg" alt="Jackie Chen" style="width:500px;height:700px;"></div>
+    <div class="photo"><img src="i1/1.jpg" alt="Jackie Chen" style="width:500px;height:700px;"></div>
     <div class="photowords">
-      <p>"Chan was perhaps <font color="#FFDB4D"> the most recognised star in the world.</font>"   -- Andrew Willis (film scholar)</p>
+      <p>"Chan was perhaps <font color="#FFDB4D"> the most recognised star in the world.</font>"   -- Andrew Willis</p>
       <br>
-      <p>"I know."   -- Jackie Chan</p></div>
+      <p>"No perhaps."   -- Jackie Chan</p></div>
     </div>
+  </div>
+
+  <div class="title1">
+    <h>Latest News</h>
+  </div>
+
+  <div class="tiles">
+    <a class="tile" href="https://www.theguardian.com/film/2016/nov/14/jackie-chan-wins-honorary-oscar-at-governors-awards">
+      <img src="https://peopledotcom.files.wordpress.com/2016/11/jackie-chan.jpg" style="width:230px;height:350px;">
+      <div class="details">
+        <span class="title">Honorary Oscars </span>
+        <span class="info">After 56 years, 200 films and innumerable injuries, Jackie Chan wins an Oscar</span>
+      </div>
+    </a>
+
+    <a class="tile" href="https://www.jaynestars.com/news/jackie-chan-and-arnold-schwarzeneggers-the-mystery-of-dragon-seal-drops-new-posters/">
+      <img src="https://asianfilmstrike.files.wordpress.com/2019/09/100205.46552166_1000x1000.jpg" style="width:230px;height:350px;">
+      <div class="details">
+        <span class="title">The Mystery of Dragon Seal</span>
+        <span class="info">Jackie Chan and Arnold Schwarzenegger’s “The Mystery of Dragon Seal” Drops New Posters</span>
+      </div>
+    </a>
+
+    <a class="tile" href="http://www.jackiechan.com/news/2019/10/28/british-academy-britannia-awards-worldwide-contribution-to-entertainment-award/">
+      <img src="http://www3.pictures.zimbio.com/gi/Jackie+Chan+2019+British+Academy+Britannia+lST75lYg8CAl.jpg" style="width:230px;height:350px;">
+      <div class="details">
+        <span class="title">British Academy Britannia Awards</span>
+        <span class="info">British Academy Britannia Awards – Worldwide Contribution to Entertainment Award</span>
+      </div>
+    </a>
+
+    <a class="tile" href="http://www.jackiechan.com/news/2019/09/12/charity-in-action-huaian-hebei/">
+      <img src="https://peopledotcom.files.wordpress.com/2016/08/jackie-chan-435-1.jpg" style="width:230px;height:350px;">
+      <div class="details">
+        <span class="title">Charity in Action</span>
+        <span class="info">Jackie Chan took part in a charity movement to help eliminate poverty in China. Last month, Jackie was in Datong; this month, Jackie visited Huai’an in Hebei.</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">
+    <h2>Copyright © 2012-2019 Jackie Chan. All Rights Reserved.</h2>
   </div>
 
 
@@ -45,8 +88,7 @@
 
 
 
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 
 </html>
